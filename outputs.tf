@@ -9,3 +9,7 @@ output "vsphere_compute_cluster_id" {
 output "virtual_machine_name" {
   value = local.hostname
 }
+
+output "virtual_machine_ip" {
+  value = vsphere_virtual_machine.this.default_ip_address
+}
